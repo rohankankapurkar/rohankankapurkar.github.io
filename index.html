@@ -37,6 +37,7 @@ experience.
 </div>
 <![endif]-->
 </head>
+
 <!-- /head-->
 <body data-spy="scroll" data-target=".navbar">
 
@@ -69,6 +70,8 @@ experience.
 			<li><a href="https://www.linkedin.com/in/rohankan"><i class="fa fa-linkedin"></i></a></li>
 			<li><a href="https://github.com/rohankankapurkar"><i class="fa fa-github"></i></a></li>
 			<li><a href="https://www.facebook.com/rohan.kankapurkar"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.instagram.com/rohan_4/"><i class="fa fa-instagram"></i></a></li>
+
 
 
 
@@ -498,7 +501,7 @@ experience.
 </div>
 <div class="container ">
 <div class="row">
-	<div class="text-center color-white col-sm-8 col-lg-8">
+	<div class="text-center color-white col-sm-12 col-lg-12">
 		<ul class="social-icons">
 			<li><a href="https://github.com/rohankankapurkar"><i class="fa fa-github"></i></a></li>
 
@@ -518,17 +521,29 @@ experience.
 
 
 	</div>
- 	<div class=" color-white col-sm-4 col-lg-4">
-		<h4>Email: 		rohan.kankapurkar@gmail.com</h4>
-		<h4>Address: 	190 Ryland Street, San Jose, CA</h4>
-		<h4>Phone: 		+1-669-265-5173</h4>
+
+
+
+
+</div>
+</div>
+
+	<div id="spopup"  style="display: none;">
+		<!--close button-->
+		<a style="position:absolute;top:14px;right:20px;font-size:10px;font-weight:bold;" href="javascript:void(0);" onclick="return closeSPopup();">
+		</a>
+		<!--insert popup content here-->
+		<p>Conatct me</p>
+		<p> <i class="fa fa-envelope"></i> rohan.kankapurkar@sjsu.edu</p>
+
+		<p><i class="fa fa-globe"></i>  190 Ryland Street, 4424, San Jose, CA, 95110 </p>
+		<p><i class="fa fa-phone-square"></i> +1-669-265-5173</p>
+		</div>
+
+
 
 	</div>
 
-
-
-</div>
-</div>
 </footer>
 
 
@@ -544,5 +559,26 @@ experience.
 <script src="assets/js/toucheffects.js"></script>
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/init.js"></script>
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+<!--adding jQuery code for pop up-->
+<script>
+
+	$(window).scroll(function(){
+		if($(document).scrollTop()>=$(document).height()*3/4)
+			$("#spopup").show("slow");else $("#spopup").hide("slow");
+	});
+	function closeSPopup(){
+		$('#spopup').hide('slow');
+	}
+
+	</script>

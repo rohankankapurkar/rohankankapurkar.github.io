@@ -767,6 +767,8 @@ input,button,select,textarea {
 	z-index:0;
 }
 #slide_1:after {
+	height:730px;
+
 	content:"";
 	display:block;
 	position:absolute;

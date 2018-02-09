@@ -159,8 +159,8 @@ experience.
 <div class="row color-black">
 
 <center><h2>Skills</h2></center>
-
-	<div class="col-md-12 animated fadeInUpNow">
+    <div class="row">
+	    <div class="col-md-12 animated fadeInUpNow">
 		<div class="boxservice">
 			<h3>Web Development</h3>
 
@@ -227,9 +227,7 @@ experience.
 
 
 	</div>
-
-
-	<div class="col-md-12 animated fadeInUpNow">
+        <div class="col-md-12 animated fadeInUpNow">
 		<div class="boxservice">
 			<h3>Programming Languages</h3>
 
@@ -257,6 +255,12 @@ experience.
 					Python
 				</div>
 			</div>
+            
+            <div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					Perl
+				</div>
+			</div>
 
 
 
@@ -266,10 +270,7 @@ experience.
 
 
 	</div>
-
-
-
-	<div class="col-md-12 animated fadeInUpNow">
+        <div class="col-md-12 animated fadeInUpNow">
 		<div class="boxservice">
 			<h3>Databases</h3>
 
@@ -300,6 +301,12 @@ experience.
 					Oracle
 				</div>
 			</div>
+            
+            <div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+					Influx-DB
+				</div>
+			</div>
 
 
 
@@ -309,8 +316,9 @@ experience.
 
 
 	</div>
-
-	<div class="col-md-12 animated fadeInUpNow">
+    </div>
+    <div class="row">
+	    <div class="col-md-12 animated fadeInUpNow">
 		<div class="boxservice">
 			<!--<i class="fa fa-globe"></i>-->
 			<h3>Testing</h3>
@@ -330,6 +338,12 @@ experience.
 					JUnit
 				</div>
 			</div>
+            
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					Mocha
+				</div>
+			</div>
 
 
 
@@ -341,8 +355,7 @@ experience.
 
 
 	</div>
-
-	<div class="col-md-12 animated fadeInUpNow">
+        <div class="col-md-12 animated fadeInUpNow">
 		<div class="boxservice">
 			<!--<i class="fa fa-globe"></i>-->
 			<h3>Collaboration</h3>
@@ -359,7 +372,17 @@ experience.
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+					Perforce
+				</div>
+			</div>
+            <div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:85%">
 					Waffle-IO
+				</div>
+			</div>
+             <div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+					JIRA
 				</div>
 			</div>
 
@@ -373,7 +396,50 @@ experience.
 
 
 	</div>
+        <div class="col-md-12 animated fadeInUpNow">
+		<div class="boxservice">
+			<!--<i class="fa fa-globe"></i>-->
+			<h3>DevOps</h3>
 
+			<!--<p>-->
+				<!--Web design encompasses many different skills and disciplines in the production and maintenance of websites.-->
+			<!--</p>-->
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					Jenkins
+				</div>
+			</div>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					Docker
+				</div>
+			</div>
+            
+            <div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					Vagrant
+				</div>
+			</div>
+            
+               <div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+					TICK Stack
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+
+	</div>
+    </div>
 
 
 
@@ -394,13 +460,35 @@ experience.
 		<h1 id="timeline">Timeline for my projects</h1>
 	</div>
 	<ul class="timeline">
-		<li>
+		
+        <li class="timeline-inverted">
+			<div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i><p>Academic</p></div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<h3 class="timeline-title">Professional Experience: SAP</h3>
+					<h4>DevOps intern</h4>
+					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>June-17 - Present</small></p>
+
+				</div>
+				<div class="timeline-body">
+				        •	Provisioned the platform in Vagrant-Docker environment where project builds can be deployed and tested.</br>
+                        •   Developed local environment for developers to play with the source code using Vagrant-Docker.</br>
+                        •   Designed and configured the Jenkins build pipeline for CI-CD with Perforce pre-submit and post-submit hooks.</br>
+                        •   Automated the product build-deploy-test cycle using Jenkins. Integrated this pipeline with JIRA.</br>
+                        •   Developed scripts for build, deployment and related tasks using Jenkins, Perl and Bash</br>
+				</div>
+			</div>
+		</li>
+        
+      
+        <li>
 			<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
 					<h3 class="timeline-title">Professional Experience: Atos</h3>
+                    <h4>Software Engineer</h4>
+
 					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Oct 2014- June 2016</small></p>
-					<p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i> Software Engineer</small></p>
 
 				</div>
 				<div class="timeline-body">

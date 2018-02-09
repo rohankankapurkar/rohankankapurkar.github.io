@@ -105,7 +105,7 @@ experience.
 					</div>
 					<br/>
 					<a href="https://github.com/rohankankapurkar" class="buttonyellow animated fadeInLeftBig"><i class="fa fa-github-alt"></i>&nbsp; GitHub</a>
-					<a href="#Section-9" class="buttoncolor animated fadeInRightBig"><i class="fa fa-code"></i> Skills</a>
+					<a id="skills-button" href="#skills" class="buttoncolor animated fadeInRightBig"><i class="fa fa-code"></i> Skills</a>
 					
 				</div>
 			</div>
@@ -620,7 +620,7 @@ experience.
 		<p>Conatct me</p>
 		<p> <i class="fa fa-envelope"></i> rohan.kankapurkar@sjsu.edu</p>
 
-		<p><i class="fa fa-globe"></i>  190 Ryland Street, 4424, San Jose, CA, 95110 </p>
+		<p><i class="fa fa-globe"></i>  329 N First Street - #104, San Jose </p>
 		<p><i class="fa fa-phone-square"></i> +1-669-265-5173</p>
 		</div>
 
@@ -672,6 +672,14 @@ $("#skills-nav").click(function() {
         scrollTop: $("#skills").offset().top
     }, 1500);
 });
+    
+ $("#skills-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#skills").offset().top
+    }, 1500);
+});
+    
+    
     
 $("#home-nav").click(function() {
     $('html, body').animate({
